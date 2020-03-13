@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<div class="space">
+
+  <h1 >Entrez votre texte : </h1>
+
+  <form (submit)="ponctuation(s)">
+
+    <div>
+      <textarea class="area" rows="7" cols="150" placeholder="Saisir le texte" name="s" [(ngModel)]="s" ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg bouton">Submit</button>
+
+  </form>
+
+  <div class="result">{{count}}</div>
+
+</div>
